@@ -17,16 +17,34 @@ export function HeroMockup() {
 			/>
 
 			<motion.div
-				initial={{ opacity: 0, scale: 0.94, y: 20 }}
-				animate={{ opacity: 1, scale: 1, y: 0 }}
+				initial={{ scale: 0.94, y: 20 }}
+				animate={{ scale: 1, y: 0 }}
 				transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
 				className="relative overflow-hidden rounded-lg border-x border-t-2 border-b-0 border-primary bg-white/3 shadow-[0_0_100px_-15px] shadow-primary/50 backdrop-blur-2xl"
 			>
-				<img
-					src="/assets/images/lp-hero-dashboard.jpg"
-					alt="Painel Abyo — comissões, rede de indicação e solicitações pagas"
-					className="aspect-auto w-full rounded-lg bg-linear-to-br from-primary/15 via-white/3 to-transparent object-cover"
-				/>
+				<picture>
+					<source
+						type="image/avif"
+						srcSet="/assets/images/lp-hero-dashboard-750.avif 750w, /assets/images/lp-hero-dashboard.avif 1440w"
+						sizes="(max-width: 768px) 100vw, 1152px"
+					/>
+					<source
+						type="image/webp"
+						srcSet="/assets/images/lp-hero-dashboard-750.webp 750w, /assets/images/lp-hero-dashboard.webp 1440w"
+						sizes="(max-width: 768px) 100vw, 1152px"
+					/>
+					<img
+						src="/assets/images/lp-hero-dashboard.jpg"
+						srcSet="/assets/images/lp-hero-dashboard-750.jpg 750w, /assets/images/lp-hero-dashboard.jpg 1440w"
+						sizes="(max-width: 768px) 100vw, 1152px"
+						alt="Painel Abyo — comissões, rede de indicação e solicitações pagas"
+						width={1440}
+						height={923}
+						fetchPriority="high"
+						decoding="async"
+						className="aspect-auto w-full rounded-lg bg-linear-to-br from-primary/15 via-white/3 to-transparent object-cover"
+					/>
+				</picture>
 				<div
 					aria-hidden
 					className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black to-transparent"

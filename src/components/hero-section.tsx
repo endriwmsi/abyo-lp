@@ -1,13 +1,16 @@
+import { ClientOnly } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "lucide-react";
+import { lazy, Suspense } from "react";
 import { Glow, GridPattern } from "./decorative";
 import { HeroMockup } from "./hero-mockup";
-import LightRays from "./light-rays";
 import { Button } from "./ui/button";
 
+const LightRays = lazy(() => import("./light-rays"));
+
 const fadeUp = (delay: number) => ({
-	initial: { opacity: 0, y: 24 },
-	animate: { opacity: 1, y: 0 },
+	initial: { y: 24 },
+	animate: { y: 0 },
 	transition: { duration: 0.7, delay, ease: [0.16, 1, 0.3, 1] as const },
 });
 
@@ -17,20 +20,24 @@ export function HeroSection() {
 			<div className="relative mx-auto px-4 sm:px-6">
 				<div className="relative w-full overflow-hidden rounded-xl border border-white/10 bg-black px-6 pt-20 pb-12 sm:px-10 sm:pt-24 sm:mb-16 max-h-screen">
 					<div className="absolute inset-0 z-0 left-0 right-0 w-full">
-						<LightRays
-							raysOrigin="top-center"
-							raysColor="#39D59F"
-							raysSpeed={1}
-							lightSpread={1}
-							rayLength={2}
-							pulsating={false}
-							fadeDistance={1}
-							saturation={1}
-							followMouse
-							mouseInfluence={0.1}
-							noiseAmount={0}
-							distortion={0}
-						/>
+						<ClientOnly>
+							<Suspense fallback={null}>
+								<LightRays
+									raysOrigin="top-center"
+									raysColor="#39D59F"
+									raysSpeed={1}
+									lightSpread={1}
+									rayLength={2}
+									pulsating={false}
+									fadeDistance={1}
+									saturation={1}
+									followMouse
+									mouseInfluence={0.1}
+									noiseAmount={0}
+									distortion={0}
+								/>
+							</Suspense>
+						</ClientOnly>
 					</div>
 					<GridPattern />
 					<Glow className="-top-40 left-1/2 h-140 w-140 -translate-x-1/2 opacity-40" />
