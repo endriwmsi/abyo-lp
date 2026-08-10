@@ -15,7 +15,12 @@ export const Route = createRootRoute({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "TanStack Start Starter",
+				title: "Abyo — Plataforma de revenda de recuperação de crédito",
+			},
+			{
+				name: "description",
+				content:
+					"Plataforma white-label de revenda de serviços de recuperação de crédito: rede de indicação multinível, catálogo configurável, pagamento PIX e assinatura digital de documentos.",
 			},
 		],
 		links: [
