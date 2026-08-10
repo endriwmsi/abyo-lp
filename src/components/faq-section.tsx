@@ -4,7 +4,7 @@ import { useState } from "react";
 import { cn } from "#/lib/utils";
 import { Reveal } from "./reveal";
 
-const FAQ_ITEMS = [
+export const FAQ_ITEMS = [
 	{
 		question: "Por que não tem uma tabela de preços na página?",
 		answer:
