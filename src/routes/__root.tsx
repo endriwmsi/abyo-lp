@@ -3,6 +3,7 @@ import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { Toaster } from "sonner";
 import { FAQ_ITEMS } from "#/components/faq-section";
+import { NotFound } from "#/components/not-found";
 import appCss from "../styles.css?url";
 
 const SITE_URL = "https://abyo.com.br";
@@ -155,6 +156,7 @@ export const Route = createRootRoute({
 			},
 		],
 	}),
+	notFoundComponent: NotFound,
 	shellComponent: RootDocument,
 });
 
