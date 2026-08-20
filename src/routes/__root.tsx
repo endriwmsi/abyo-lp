@@ -56,6 +56,10 @@ export const Route = createRootRoute({
 				content: "index, follow",
 			},
 			{
+				name: "facebook-domain-verification",
+				content: "6xdt5jxozahqxd4nu9pygcwn9d596w",
+			},
+			{
 				name: "theme-color",
 				content: "#39d59f",
 			},
