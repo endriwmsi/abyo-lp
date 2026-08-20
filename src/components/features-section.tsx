@@ -20,7 +20,7 @@ const FEATURES = [
 		icon: NetworkIcon,
 		title: "Rede multinível",
 		description:
-			"Members indicam members. Comissão calculada e distribuída automaticamente até 10 níveis de profundidade.",
+			"Members indicam members, mas quem executa o serviço é a Owner. Comissão calculada e paga automaticamente sobre cada venda realizada, até 10 níveis de profundidade.",
 	},
 	{
 		icon: QrCodeIcon,

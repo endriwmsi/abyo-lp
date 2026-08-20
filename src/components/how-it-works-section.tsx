@@ -23,7 +23,7 @@ const STEPS = [
 		icon: Volume2Icon,
 		title: "Sua rede indica e vende",
 		description:
-			"Members convidam parceiros. A comissão sobe automaticamente até 10 níveis, sem planilha.",
+			"Members convidam parceiros, você executa o serviço e fatura. A comissão sobe automática sobre a venda paga, até 10 níveis, sem planilha.",
 	},
 	{
 		icon: CreditCardIcon,

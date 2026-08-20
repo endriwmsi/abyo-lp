@@ -49,6 +49,9 @@ export function HeroMockup() {
 					aria-hidden
 					className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black to-transparent"
 				/>
+				<span className="absolute top-3 right-3 rounded-full border border-white/10 bg-black/60 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wide text-white/70 backdrop-blur-sm">
+					Ambiente de demonstração
+				</span>
 			</motion.div>
 
 			<motion.div

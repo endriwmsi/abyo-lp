@@ -8,6 +8,7 @@ import { HeroSection } from "#/components/hero-section";
 import { HowItWorksSection } from "#/components/how-it-works-section";
 import { KeywordMarquee } from "#/components/keyword-marquee";
 import { PlansSection } from "#/components/plans-section";
+import { RoadmapSection } from "#/components/roadmap-section";
 import { SiteFooter } from "#/components/site-footer";
 import { SiteHeader } from "#/components/site-header";
 import { TestimonialsSection } from "#/components/testimonials-section";
@@ -35,6 +36,7 @@ function Home() {
 				<HowItWorksSection />
 				<TestimonialsSection />
 				<PlansSection onBookCall={handleBookCall} />
+				<RoadmapSection />
 				<FaqSection />
 				<ContactSection prefillMessage={prefillMessage} />
 			</main>

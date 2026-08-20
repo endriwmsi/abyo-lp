@@ -55,18 +55,17 @@ export function HeroSection() {
 							{...fadeUp(0.1)}
 							className="mt-6 font-display text-4xl leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:text-6xl"
 						>
-							Transforme sua rede de indicação numa{" "}
-							<span className="text-primary">máquina de revenda</span> de
-							crédito.
+							Estruture sua operação de recuperação de crédito,{" "}
+							<span className="text-primary">sem depender de planilha</span>.
 						</motion.h1>
 
 						<motion.p
 							{...fadeUp(0.2)}
 							className="mx-auto mt-6 max-w-4xl text-base text-muted-foreground leading-relaxed sm:text-lg"
 						>
-							Catálogo de serviços, rede de indicação com comissão automática
-							até 10 níveis, pagamento PIX e assinatura digital de documentos —
-							tudo numa instalação exclusiva, com a sua marca.
+							Você presta o serviço de verdade. Catálogo, rede de indicação
+							com comissão automática, PIX e assinatura digital — tudo com a
+							sua marca, numa instalação só sua.
 						</motion.p>
 
 						<motion.div
@@ -85,7 +84,7 @@ export function HeroSection() {
 								className="rounded-full"
 								asChild
 							>
-								<a href="#precos">Ver planos</a>
+								<a href="#como-funciona">Ver como funciona</a>
 							</Button>
 						</motion.div>
 					</div>
